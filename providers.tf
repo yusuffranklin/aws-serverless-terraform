@@ -14,6 +14,6 @@ provider "aws" {
 
 data "archive_file" "zip_the_app" {
     type = "zip"
-    source_dir = "${path.module}/App/"
+    source_dir = "${path.module}/App/Python"
     output_path = "${path.module}/App/powerofmath.zip"
 }
