@@ -12,7 +12,13 @@ variable "aws_amplify_name" {
 }
 
 variable "aws_amplify_repository" {
-    default = "${path.module}/App/"
+    type = string
+    default = "https://github.com/yusuffranklin/aws-serverless-terraform.git"
+}
+
+variable "github_token" {
+    type = string
+    default = "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"
 }
 
 variable "rest_api_name" {
@@ -26,4 +32,8 @@ variable "aws_lambda_function_name" {
 
 variable "my_region" {
     default = "ap-southeast-1"
+}
+
+variable "accountId" {
+    type = string
 }
